@@ -1,0 +1,445 @@
+:root {
+  font-size: 62.5%; /* 10px */
+
+  --bg-green: #38af90;
+  --bg-light-grey: #f0f0f0;
+  --color-white: #fff;
+  --color-grey: #797979;
+  --color-soft-grey: #c4c4c4;
+  --color-pink: #dd7e92;
+  --bg-dark-grey: #383838;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: unset;
+}
+
+body {
+  width: 100vw;
+  font-size: 16px;
+  min-width: 320px;
+}
+
+header {
+  width: 100%;
+  height: 9rem;
+  background-color: var(--bg-green);
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.75));
+}
+
+.wrapper-header {
+  height: 100%;
+  max-width: 99rem;
+  min-width: 30rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.wrapper-header h1 {
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  color: var(--color-white);
+}
+
+.wrapper-header nav {
+  display: flex;
+  gap: 2.9rem;
+  align-items: center;
+}
+
+nav ul {
+  display: none;
+  gap: 2.9rem;
+  align-items: center;
+}
+
+nav ul li a {
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
+
+
+#news {
+  margin: 4rem auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#news h2 {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  color: var(--color-grey);
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+
+.container-news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 99rem;
+  min-width: 30rem;
+  gap: 2.8rem;
+}
+
+.card-news {
+  padding: 1.6rem 1.2rem 1.2rem 1.2rem;
+  background-color: var(--bg-light-grey);
+  border-radius: 0.8rem;
+}
+.card-news h3 {
+  color: var(--bg-green);
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+}
+
+.card-news-subtitle h4 {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-weight: 700;
+  color: var(--color-grey);
+  margin-bottom: 3px;
+  border-bottom: 1px solid var(--bg-green);
+}
+
+.card-news-subtitle p span {
+  color: var(--bg-green);
+}
+
+.card-news p {
+  color: var(--color-grey);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-top: 1.2rem;
+  margin-bottom: 0.7rem;
+}
+
+.card-news h5 {
+  color: var(--color-pink);
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
+
+button {
+  width: 24.4rem;
+  height: 6.7rem;
+  color: var(--color-white);
+  background-color: var(--color-pink);
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  border-radius: 0.8rem;
+  border: none;
+}
+
+
+#games {
+  background-color: var(--bg-light-grey);
+  padding: 4rem 0;
+}
+
+#games h2 { 
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  text-align: center;
+  color: var(--bg-green);
+  margin-bottom: 2.8rem;
+}
+
+.container-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2.7rem;
+  max-width: 99rem;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.card-game {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 0.8rem;
+  width: 30.0rem;
+  text-align: center;
+}
+
+.card-game img {
+  width: 300px;
+  height: 16.854rem;
+  margin-bottom: 2.746rem;
+  border-radius: 0.8rem 0.8rem 0 0;
+}
+
+.card-game h3 {
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  color: var(--color-grey);
+}
+
+.card-game p span {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  color: var(--bg-green);
+}
+
+.card-game p {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  font-weight: 400;
+  color: var(--color-grey);
+  margin-bottom: 1.3rem;
+}
+
+.card-game h4 {
+  font-size: 3.6rem;
+  line-height: 5.4rem;
+  color: var(--bg-green);
+  margin-bottom: 1.5rem;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem;
+}
+
+#form h2 {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  color: var(--color-grey);
+  text-align: center;
+
+  margin-bottom: 1.6rem;
+}
+.card-form {
+  min-width: 30rem;
+  max-width: 79rem;
+  background-color: var(--bg-light-grey);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border: none;
+  border-radius: 0.8rem;
+  padding: 5.2rem 1.0rem 2.2rem;
+}
+
+form {
+  max-width: 64.2rem;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.input-wrapper input {
+  width: 100%;
+  height: 5rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  border: 1px solid var(--color-grey);
+  border-radius: 0.4rem;
+  padding: 1.3rem 2.2rem;
+
+}
+
+.input-wrapper input::placeholder {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-style: normal;
+  color: var(--color-soft-grey);
+}
+
+.platform {
+  margin-bottom: 3.5rem;
+}
+
+.platform input {
+  margin-top: 0.8rem;
+}
+
+.checkbox-news,
+.platform {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: var(--color-grey);
+}
+
+.checkbox-news {
+  margin-bottom: 4.7rem;
+}
+
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+.button input {
+  width: 24.4rem;
+  height: 6.7rem;
+  border-radius: 0.8rem;
+  background-color: var(--color-pink);
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  color: var(--color-white);
+  border: none;
+
+}
+
+.button input:hover {
+  background: var(--color-white);
+  border: 2px solid var(--color-pink);
+  color: var(--color-pink);
+}
+
+footer {
+  height: 30.2rem;
+  background: var(--bg-dark-grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.7rem;
+}
+
+footer,
+footer a {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  color: var(--color-white);
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+}
+
+footer p {
+  margin: 1rem;
+}
+
+.social-links,
+.text-footer,
+.terms-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .wrapper-header h1, .card-news h3 {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  #news h2, #form h2 {
+    font-size: 3.6rem;
+    line-height: 5.4rem;
+    margin-bottom: 4rem;
+  }
+
+  .card-news-subtitle h4 {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+  
+  }
+
+  .card-news p {
+    margin-top: 1.6rem;
+  }
+
+  .card-news h5 {
+    margin-bottom: 1.5rem;
+  }
+
+  .container-news {
+    gap: 4rem;
+  }
+
+  #games {
+    padding: 3.6rem 0 7rem;
+  }
+
+  #games h2 {
+    font-size: 3.6rem;
+    line-height: 5.4rem;
+    margin-bottom: 7.3rem;
+  }
+
+  .container-cards {
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  #form {
+    margin: 3.9rem 0 6.1rem;
+  }
+
+  .input-wrapper {
+    margin-bottom: 2.1rem;
+  }
+
+  .card-form {
+    padding: 5.2rem 7.4rem;
+  }
+
+  .platform {
+    margin-bottom: 3rem;
+  }
+  
+  form {
+    width: 64.2rem;
+  }
+
+  .checkbox-news {
+    margin-bottom: 3.8rem;
+  }
+
+  .button {
+    flex-direction: row;
+    justify-content: center;
+    gap: 5.2rem;
+    margin: 0 auto;
+  }
+
+  footer {
+    height: 19rem;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+}
